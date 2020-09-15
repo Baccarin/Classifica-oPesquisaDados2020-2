@@ -1,0 +1,30 @@
+INSERTION SORT - PSEUDOCÓDIGO  O(n)
+
+Durante (contador = 1; contador < vetor.tamanho; contador = contador + 1){
+	chave = vetor[contador];
+	posicaoaux = contador - 1;
+	Enquanto ( posicaoaux >= 0 E vetor[posicaoaux] > chave){
+		vetor[posicaoaux + 1] = vetor[posicaoaux];
+		posicaoaux = posicaoaux - 1;
+	}
+}
+
+-------------------------------------------------------------------------------------------------
+
+SELECTION SORT - PSEUDOCÓDIGO O(n²)
+
+Durante (contador = 0; contador < (vetor.tamanho - 1); contador = contador + 1){
+	posicao = contador;
+	durante (contadoraux=(contador + 1); contadoraux < vetor.tamanho; contadoaux++){
+		se(vetor[posicao] > vetor[contadoraux]){
+			posicao = contadoraux;
+		}
+	}
+	se (posicao diferente contador){
+		posicaoaux = vetor[contador];
+		vetor[contador] = vetor[posicao];
+		vetor[posicao] = posicaoaux;
+	}
+}
+	
+
