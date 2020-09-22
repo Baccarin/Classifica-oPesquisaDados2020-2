@@ -41,7 +41,6 @@ int main()
     t2 = clock();
     elapsed = timediff(t1, t2);
     printf("elapsed: %ld ms\n", elapsed);
-    printf("funcionou");
   
   return 0;
 }
